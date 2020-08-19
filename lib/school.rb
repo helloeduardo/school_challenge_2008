@@ -23,4 +23,10 @@ class School
     hours_in_school_day > 4
   end
 
+  def standard_student_names
+    student_names.map do |name|
+      name.capitalize
+    end
+  end
+
 end
