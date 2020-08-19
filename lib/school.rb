@@ -29,4 +29,12 @@ class School
     end
   end
 
+  def convert_end_time_to_clock_time
+   end_hour = end_time.split(":")[0].to_i
+   end_minutes = end_time.split(":")[1]
+   converted_end_hour = end_hour % 12
+
+   clock_time = converted_end_hour.to_s + ":" + end_minutes
+  end
+
 end
